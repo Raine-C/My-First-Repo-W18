@@ -1,0 +1,510 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 49px;
+    font-family: Philosopher;
+}
+
+h2 {
+    font-size: 39px;
+    font-family: Philosopher;
+}
+
+h3 {
+    font-size: 31px;
+    font-family: Philosopher;
+}
+
+h4 {
+    font-size: 25px;
+    font-family: Philosopher;
+}
+
+h5 {
+    font-size: 20px;
+    font-family: Philosopher;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+header {
+    font-family: philosopher;
+    font-size: 20px;
+    color: #1c2321;
+    background: #fafaefb3;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 10vw;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.Resumebox {
+    display: inline;
+    align-self: center;
+
+}
+
+
+header li {
+    display: inline;
+    margin-right: 24px;
+}
+
+
+
+/* The Toggle */
+.toggleWrapper {
+    input {
+        position: absolute;
+        left: -99em;
+    }
+}
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+    background-color: #1c2321;
+    border-radius: 34px;
+    transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+    &:before {
+        content: 'EN';
+        position: absolute;
+        left: -40px;
+        top: 7px;
+        font-size: 18px;
+        color: #1c2321;
+    }
+
+    &:after {
+        content: '繁';
+        font-family: 'Noto Sans TC', sans-serif;
+        position: absolute;
+        right: -36px;
+        top: 3.5px;
+        font-size: 18px;
+        color: #C6C8C7;
+    }
+}
+
+.toggle__handler {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 4px;
+    left: 3px;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input:checked {
+    +.toggle {
+        background-color: #1c2321;
+
+        &:before {
+            color: #C6C8C7;
+        }
+
+        &:after {
+            color: #1c2321;
+        }
+
+        .toggle__handler {
+            background-color: #fff;
+            transform: translate3d(27px, 0, 0) rotate(0);
+
+
+        }
+
+    }
+}
+
+header a {
+    color: #1c2321;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* main */
+
+section {
+    background: #fafaef;
+    padding: 48px 10vw;
+}
+
+/* Hero Page */
+
+.introduction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 123px;
+}
+
+.introduction h1 {
+    color: #1c2321;
+    margin-bottom: 40px;
+}
+
+.introduction h3 {
+    color: #1c2321;
+    width: 588px;
+    margin-bottom: 40px;
+    /* margin-right: 80px; */
+}
+
+.introduction img {
+    width: 394px;
+    left: 144px;
+}
+
+.ctabutton {
+    display: flex;
+    align-items: center;
+
+}
+
+.introduction h5 {
+    color: #1c2321;
+    padding: 16px 24px;
+    margin-right: 24px;
+}
+
+.introduction button {
+    font-size: 20px;
+    background-color: #1c2321;
+    color: #fafaef;
+    font-family: Philosopher;
+    padding: 16px 24px;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    box-shadow: 5px 10px 80px #888888;
+}
+
+/* My Background */
+.title h2 {
+    color: #1c2321;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.mybackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#flashcardPicture {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.TheatreArt,
+.SalesEngineer,
+.ProjectManager {
+    height: 429px;
+    width: 319px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+
+.TheatreArt {
+    height: 429px;
+    width: 319px;
+    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/TheatreArt.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.SalesEngineer {
+    height: 429px;
+    width: 319px;
+    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/SalesEngineer.png?raw=true");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ProjectManager {
+    height: 429px;
+    width: 319px;
+    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/ProjectManager.png?raw=true");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(27, 35, 33, 0.4);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+
+.text h3 {
+    align-items: center;
+    justify-content: center;
+    color: #fafaef;
+
+}
+
+#flashcard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.TheatreArtcard,
+.SalesEngineercard,
+.ProjectManagercard {
+    border-radius: 0 0 20px 20px;
+    background-color: #fff;
+    border: 1px solid #907764;
+    height: 465px;
+    width: 317px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -390px;
+    box-shadow: 5px 5px 80px #888888;
+
+}
+
+#flashcard h4 {
+    margin-bottom: 16px;
+}
+
+#flashcard img {
+    margin-bottom: 16px;
+    width: 48px;
+    height: 48px;
+
+}
+
+/* My worK */
+
+#worklistGrid {
+    justify-content: center;
+    display: grid;
+    grid-template: 407px 132px 407px / 564px 564px;
+    grid-template-areas:
+        "work1 work2"
+        "PD1 PD2"
+        "work3 work4"
+        "PD3 PD4";
+
+}
+
+#work1 {
+    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
+    grid-area: work1;
+}
+
+#work2 {
+    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
+    grid-area: work2;
+}
+
+#work3 {
+    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
+    grid-area: work3;
+}
+
+#work4 {
+    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
+    grid-area: work4;
+}
+
+.worklistGridArea {
+    background-size: cover;
+    background-position: center;
+    margin: 0 12px;
+    border-radius: 20px;
+
+}
+
+.Apptag {
+    width: 108px;
+    height: 58px;
+    border-radius: 20px;
+    background: #C7BBB1;
+    text-align: center;
+    line-height: 58px;
+    justify-content: center;
+    color: #1c2321;
+    position: relative;
+    top: 0px;
+    left: 432px;
+
+}
+
+.Webtag {
+    width: 108px;
+    height: 58px;
+    border-radius: 20px;
+    background: #8D9190;
+    text-align: center;
+    line-height: 58px;
+    color: #1c2321;
+    position: relative;
+    top: 0px;
+    left: 432px;
+}
+
+#PD1,
+#PD2,
+#PD3,
+#PD4,
+h4 {
+    padding: 8px;
+    color: #1c2321;
+}
+
+#PD1,
+#PD2,
+#PD3,
+#PD4,
+h6 {
+    padding: 8px;
+    color: #8D9190;
+}
+
+
+/* Testimonial */
+
+.testimonial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #1c2321;
+}
+
+.Ttext {
+    max-width: 580px;
+
+}
+
+#TMPhoto {
+    width: 314px;
+    height: 360px;
+    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/Charlotte.png?raw=true");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 20px;
+
+}
+
+.Ttext .right {
+    text-align: right;
+    font-size: 64px;
+}
+
+.Ttext .left {
+    text-align: left;
+    font-size: 64px;
+}
+
+.testimonial H4 {
+    padding: 0px 0 8px 0;
+    text-align: left;
+}
+
+.testimonial h5 {
+    padding: 0px 0 2px 0;
+    text-align: left;
+}
+
+
+
+.Encourage h5 {
+    color: #1c2321;
+    text-align: center;
+    margin: 16px 0 0 0;
+}
+
+
+/* Footer */
+footer {
+    background: #1c2321;
+    padding: 24px 10vw;
+}
+
+#FTop {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.FLeft img {
+    margin-right: 9px;
+    margin-left: 7px;
+
+}
+
+footer h6 {
+    background: #1c2321;
+    color: #fafaef;
+    text-align: left;
+}
+
+footer p {
+    background: #1c2321;
+    color: #fafaefa0;
+    text-align: right;
+}
+
+/* Media Query */
