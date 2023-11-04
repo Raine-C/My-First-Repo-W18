@@ -333,23 +333,35 @@ section {
     height: 48px;
 }
 
-.bounceMe{
+.bounceMe {
     animation: arrowDown .67s infinite;
 }
 
 @keyframes arrowDown {
+    0% {
+        transform: translateY(0px);
+
+    }
+
     50% {
-      margin-top: 0px;
-  
+        transform: translateY(6px);
+
     }
+
+    50% {
+        transform: translateY(3px);
+
+    }
+
     75% {
-      margin-top: .1px;
-  
+        transform: translateY(6px);
+
     }
+
     100% {
-      margin: 0px;
+        transform: translateY(0px);
     }
-  }
+}
 
 /* My worK */
 
