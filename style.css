@@ -240,6 +240,7 @@ section {
     z-index: 1;
 }
 
+
 .TheatreArt,
 .SalesEngineer,
 .ProjectManager {
@@ -330,8 +331,25 @@ section {
     margin-bottom: 16px;
     width: 48px;
     height: 48px;
-
 }
+
+.bounceMe{
+    animation: arrowDown .67s infinite;
+}
+
+@keyframes arrowDown {
+    50% {
+      margin-top: 0px;
+  
+    }
+    75% {
+      margin-top: .1px;
+  
+    }
+    100% {
+      margin: 0px;
+    }
+  }
 
 /* My worK */
 
