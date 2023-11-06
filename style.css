@@ -177,7 +177,7 @@ section {
     justify-content: space-evenly;
     align-items: center;
     padding-top: 123px;
-    
+
 }
 
 .introduction h1 {
@@ -280,7 +280,9 @@ section {
     background-size: cover;
 }
 
-.text1, .text2, .text3 {
+.text1,
+.text2,
+.text3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,7 +295,9 @@ section {
 }
 
 
-.text1 h3, .text2 h3, .text3 h3 {
+.text1 h3,
+.text2 h3,
+.text3 h3 {
     align-items: center;
     justify-content: center;
     color: #fafaef;
@@ -306,7 +310,9 @@ section {
     /* align-items: center; */
 }
 
-.TheatreArtcard,.ProjectManagercard,.SalesEngineercard {
+.TheatreArtcard,
+.ProjectManagercard,
+.SalesEngineercard {
     border-radius: 0 0 20px 20px;
     background-color: #fff;
     border: 1px solid #907764;
@@ -324,7 +330,7 @@ section {
 
 #flashcard h4 {
     margin-bottom: 16px;
-/
+    /
 }
 
 #flashcard img {
@@ -368,7 +374,7 @@ section {
 #worklistGrid {
     justify-content: center;
     display: grid;
-    grid-template: 407px 132px 407px / 564px 564px;
+    grid-template: 407px 132px 407px 132px / 564px 564px;
     grid-template-areas:
         "work1 work2"
         "PD1 PD2"
@@ -380,21 +386,26 @@ section {
 #work1 {
     background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
     grid-area: work1;
+    position: relative;
 }
 
 #work2 {
     background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
     grid-area: work2;
+    position: relative;
+    
 }
 
 #work3 {
     background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
     grid-area: work3;
+    position: relative;
 }
 
 #work4 {
     background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
     grid-area: work4;
+    position: relative;
 }
 
 .worklistGridArea {
@@ -414,9 +425,9 @@ section {
     line-height: 58px;
     justify-content: center;
     color: #1c2321;
-    position: relative;
+    position: absolute;
     top: 0px;
-    left: 432px;
+    right: 0px;
 
 }
 
@@ -427,10 +438,11 @@ section {
     background: #8D9190;
     text-align: center;
     line-height: 58px;
+    justify-content: center;
     color: #1c2321;
-    position: relative;
+    position: absolute;
     top: 0px;
-    left: 432px;
+    right: 0px;
 }
 
 #PD1,
@@ -538,3 +550,77 @@ footer p {
 }
 
 /* Media Query */
+@media only screen and (max-width: 1000px) {
+   
+    section {
+        padding: 36px, 0;
+    }
+
+    .navbar,
+    .toggleWrapper {
+        display: none;
+    }
+
+    nav .logo {
+        margin-left: 50%;
+    }
+
+    .introduction, #flashcardPicture, #flashcard  {
+        flex-direction: column;
+
+    }
+
+    #worklistGrid {
+        grid-template: 256px 132px 256px 132px 256px 132px 256px 132px/355px;
+        grid-template-areas:
+            "work1"
+            "PD1" 
+            "work2" 
+            "PD2" 
+            "work3"
+            "PD3" 
+            "work4"
+            "PD4";
+
+    }
+
+    .Apptag {
+        width: 81px;
+        height: 44px;
+        /* border-radius: 20px;
+        background: #C7BBB1;
+        text-align: center; */
+        line-height: 44px;
+        /* justify-content: center; */
+        /* color: #1c2321; */
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 18.75px;
+    
+    }
+    
+    .Webtag {
+        width: 81px;
+        height: 44px;
+        /* border-radius: 20px;
+        background: #8D9190;
+        text-align: center; */
+        line-height: 44px;
+        /* color: #1c2321; */
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 18.75px;
+    }
+
+
+    .testimonial {
+        flex-direction: column;
+    }
+
+    /* .FTop{
+        justify-content: center;
+    } */
+
+}
