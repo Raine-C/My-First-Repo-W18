@@ -265,7 +265,7 @@ section {
 .TheatreArt {
     height: 429px;
     width: 319px;
-    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/TheatreArt.png?raw=true");
+    background-image: url("image/TheatreArt.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -273,7 +273,7 @@ section {
 .SalesEngineer {
     height: 429px;
     width: 319px;
-    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/SalesEngineer.png?raw=true");
+    background-image: url("image/SalesEngineer.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -282,7 +282,7 @@ section {
 .ProjectManager {
     height: 429px;
     width: 319px;
-    background-image: url("https://github.com/Raine-C/My-First-Repo-W18/blob/main/image/ProjectManager.png?raw=true");
+    background-image: url("image/ProjectManager.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -392,26 +392,26 @@ section {
 }
 
 #work1 {
-    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
+    background-image: url("image/photoWF.png");
     grid-area: work1;
     position: relative;
 }
 
 #work2 {
-    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
+    background-image: url("image/photoWF.png");
     grid-area: work2;
     position: relative;
 
 }
 
 #work3 {
-    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
+    background-image: url("image/photoWF.png");
     grid-area: work3;
     position: relative;
 }
 
 #work4 {
-    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
+    background-image: url("image/photoWF.png");
     grid-area: work4;
     position: relative;
 }
@@ -488,7 +488,7 @@ h6 {
 #TMPhoto {
     width: 314px;
     height: 360px;
-    background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/Charlotte.png?raw=true");
+    background-image: url("image/Charlotte.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
