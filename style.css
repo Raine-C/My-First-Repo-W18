@@ -162,6 +162,11 @@ header a:hover {
     text-decoration: underline;
 }
 
+.menubutton {
+    border: none;
+    background-color:#fafaef;
+    display: none;
+}
 
 
 
@@ -559,7 +564,10 @@ footer p {
 
 /* Media Query */
 @media only screen and (max-width: 1000px) {
-   
+   .menubutton{
+    display: block;
+   }
+
     section {
         padding: 36px, 1vw;
     }
