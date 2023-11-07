@@ -79,6 +79,8 @@ header li {
 
 /* The Toggle */
 .toggleWrapper {
+    display: flex;
+    align-items: center;
     input {
         position: absolute;
         left: -99em;
@@ -173,11 +175,15 @@ section {
 /* Hero Page */
 
 .introduction {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    padding-top: 123px;
+}
+
+.intro {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding-top: 123px;
-
 }
 
 .introduction h1 {
@@ -193,7 +199,6 @@ section {
 }
 
 .introduction img {
-    width: 394px;
     left: 144px;
 }
 
@@ -540,7 +545,7 @@ footer {
 footer h6 {
     background: #1c2321;
     color: #fafaef;
-    text-align: left;
+    text-align: right;
 }
 
 footer p {
@@ -549,11 +554,14 @@ footer p {
     text-align: right;
 }
 
+
+
+
 /* Media Query */
 @media only screen and (max-width: 1000px) {
    
     section {
-        padding: 36px, 0;
+        padding: 36px, 1vw;
     }
 
     .navbar,
@@ -564,9 +572,14 @@ footer p {
     nav .logo {
         margin-left: 50%;
     }
-
-    .introduction, #flashcardPicture, #flashcard  {
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ #flashcardPicture, #flashcard  {
         flex-direction: column;
+        align-items: center;
 
     }
 
@@ -614,13 +627,24 @@ footer p {
         font-size: 18.75px;
     }
 
-
     .testimonial {
         flex-direction: column;
     }
 
-    /* .FTop{
-        justify-content: center;
-    } */
+    footer P {
+        text-align: center;
+        margin-top: 24PX;
+    }
 
+    #FTop {
+     justify-content: center;
+     align-items: center;
+    }
+
+    .FImg{
+        display: flex;
+        justify-content: center;
+    }
+
+    
 }
