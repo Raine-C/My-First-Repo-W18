@@ -81,6 +81,7 @@ header li {
 .toggleWrapper {
     display: flex;
     align-items: center;
+
     input {
         position: absolute;
         left: -99em;
@@ -164,7 +165,7 @@ header a:hover {
 
 .menubutton {
     border: none;
-    background-color:#fafaef;
+    background-color: #fafaef;
     display: none;
 }
 
@@ -183,12 +184,13 @@ section {
     /* display: flex; */
     /* justify-content: space-evenly; */
     /* align-items: center; */
-    padding-top: 123px;
+    padding-top: 171px;
 }
 
 .intro {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
 }
 
 .introduction h1 {
@@ -201,10 +203,6 @@ section {
     width: 588px;
     margin-bottom: 40px;
     /* margin-right: 80px; */
-}
-
-.introduction img {
-    left: 144px;
 }
 
 .ctabutton {
@@ -284,7 +282,7 @@ section {
 .ProjectManager {
     height: 429px;
     width: 319px;
-    background-image: url("/image/ProjectManager.png");
+    background-image: url("https://github.com/Raine-C/My-First-Repo-W18/blob/main/image/ProjectManager.png?raw=true");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -403,7 +401,7 @@ section {
     background-image: url("https://github.com/Raine-C/My-First-Repo/blob/main/image/photoWF.png?raw=true");
     grid-area: work2;
     position: relative;
-    
+
 }
 
 #work3 {
@@ -485,7 +483,6 @@ h6 {
 
 .Ttext {
     max-width: 580px;
-
 }
 
 #TMPhoto {
@@ -550,7 +547,6 @@ footer {
 footer h6 {
     background: #1c2321;
     color: #fafaef;
-    text-align: right;
 }
 
 footer p {
@@ -564,28 +560,49 @@ footer p {
 
 /* Media Query */
 @media only screen and (max-width: 1000px) {
-   .menubutton{
-    display: block;
-   }
-
+    
     section {
-        padding: 36px, 1vw;
+        padding: 36px, 0vw;
     }
 
+    /* nav bar */
     .navbar,
     .toggleWrapper {
         display: none;
     }
 
+    .menubutton {
+        display: block;
+    }
+
     nav .logo {
         margin-left: 50%;
     }
-.intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
- #flashcardPicture, #flashcard  {
+
+
+    /* introduction */
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 72px;
+    }
+
+    .iText h3 {
+        max-width: 348px;
+    }
+
+
+     /* My Work */
+    #flashcardPicture,
+    #flashcard {
         flex-direction: column;
         align-items: center;
 
@@ -595,11 +612,11 @@ footer p {
         grid-template: 256px 132px 256px 132px 256px 132px 256px 132px/355px;
         grid-template-areas:
             "work1"
-            "PD1" 
-            "work2" 
-            "PD2" 
+            "PD1"
+            "work2"
+            "PD2"
             "work3"
-            "PD3" 
+            "PD3"
             "work4"
             "PD4";
 
@@ -608,51 +625,46 @@ footer p {
     .Apptag {
         width: 81px;
         height: 44px;
-        /* border-radius: 20px;
-        background: #C7BBB1;
-        text-align: center; */
         line-height: 44px;
-        /* justify-content: center; */
-        /* color: #1c2321; */
         position: absolute;
         top: 0px;
         right: 0px;
         font-size: 18.75px;
-    
+
     }
-    
+
     .Webtag {
         width: 81px;
         height: 44px;
-        /* border-radius: 20px;
-        background: #8D9190;
-        text-align: center; */
         line-height: 44px;
-        /* color: #1c2321; */
         position: absolute;
         top: 0px;
         right: 0px;
         font-size: 18.75px;
     }
 
+
+     /* Testimonial*/
     .testimonial {
         flex-direction: column;
     }
 
+
+     /* footer */
     footer P {
         text-align: center;
         margin-top: 24PX;
     }
 
     #FTop {
-     justify-content: center;
-     align-items: center;
+        justify-content: center;
+        align-items: center;
     }
 
-    .FImg{
+    .FImg {
         display: flex;
         justify-content: center;
     }
 
-    
+
 }
